@@ -3,9 +3,9 @@ from jose import JWTError, jwt
 from passlib.context import CryptContext
 from fastapi import HTTPException, Depends
 from sqlalchemy.orm import Session
+from fastapi.security import OAuth2PasswordBearer
 import database
 import models
-from fastapi.security import OAuth2PasswordBearer
 
 with open("venv/secret_key.txt", "r") as f:
     SECRET_KEY = f.read().strip()

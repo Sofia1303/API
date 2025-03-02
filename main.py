@@ -3,11 +3,11 @@ from fastapi import Depends
 from datetime import datetime
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
+from auth import get_current_user
+from pydantic import BaseModel
 import models
 import database
 import auth
-from auth import get_current_user
-from pydantic import BaseModel
 
 app = FastAPI()
 

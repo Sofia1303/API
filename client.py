@@ -1,11 +1,11 @@
-import sys
-import requests
 from datetime import datetime, timedelta
 from PyQt6.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QPushButton, QLabel, QListWidget,
     QLineEdit, QTextEdit, QSpinBox, QComboBox
 )
 from PyQt6.QtCore import Qt
+import sys
+import requests
 import re
 
 API_URL = "http://127.0.0.1:8000"
